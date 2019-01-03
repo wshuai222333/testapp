@@ -6,6 +6,8 @@
           <text style="font-size:32px;color:#333333;line-height:105px;">个人中心</text>
       </div>
 
+     
+
       <div @click="toback()" class="bt row">
           <text style="font-size:32px;color:#333333;line-height:105px;">返回</text>
       </div>

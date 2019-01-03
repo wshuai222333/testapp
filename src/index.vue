@@ -5,6 +5,10 @@
           <text style="font-size:32px;color:#333333;line-height:105px;">个人中心</text>
       </div>
 
+        <div @click="tohome()" class="bt row">
+          <text style="font-size:32px;color:#333333;line-height:105px;">首页</text>
+      </div>
+
       <div @click="toHi()" class="bt row">
           <text style="font-size:32px;color:#333333;line-height:105px;">好嗨哦</text>
       </div>
@@ -35,6 +39,11 @@ export default {
     toHi(){
         navigator.push({
           	url: Util.getJumpBaseUrl('hi')
+        })
+    },
+     tohome(){
+        navigator.push({
+          	url: Util.getJumpBaseUrl('home')
         })
     },
   }
